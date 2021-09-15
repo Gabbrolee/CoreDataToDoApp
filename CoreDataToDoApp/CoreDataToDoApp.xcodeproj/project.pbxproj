@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		044DBBF426F165F500490BFB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD702E26F141E700D52BD1 /* HomeViewController.swift */; };
+		044DBBFC26F1EA4300490BFB /* HomeVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBBFB26F1EA4300490BFB /* HomeVCExtension.swift */; };
+		044DBBFE26F1EA5B00490BFB /* DetailVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBBFD26F1EA5B00490BFB /* DetailVCExtension.swift */; };
 		04CEB87226F15BA700DF0EB3 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEB87126F15BA700DF0EB3 /* HomeTableViewCell.swift */; };
 		CEBD702B26F141E700D52BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD702A26F141E700D52BD1 /* AppDelegate.swift */; };
 		CEBD702D26F141E700D52BD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD702C26F141E700D52BD1 /* SceneDelegate.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044DBBFB26F1EA4300490BFB /* HomeVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCExtension.swift; sourceTree = "<group>"; };
+		044DBBFD26F1EA5B00490BFB /* DetailVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVCExtension.swift; sourceTree = "<group>"; };
 		04CEB87126F15BA700DF0EB3 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		CEBD702726F141E700D52BD1 /* CoreDataToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBD702A26F141E700D52BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,9 +72,10 @@
 		044DBBF726F1668F00490BFB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				044DBBFA26F1EA1D00490BFB /* Extensions */,
 				CEBD702E26F141E700D52BD1 /* HomeViewController.swift */,
-				04CEB87126F15BA700DF0EB3 /* HomeTableViewCell.swift */,
 				CEBD704226F1475400D52BD1 /* DetailViewController.swift */,
+				04CEB87126F15BA700DF0EB3 /* HomeTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -90,6 +95,15 @@
 				CEBD703626F141E900D52BD1 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		044DBBFA26F1EA1D00490BFB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				044DBBFB26F1EA4300490BFB /* HomeVCExtension.swift */,
+				044DBBFD26F1EA5B00490BFB /* DetailVCExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CEBD701E26F141E700D52BD1 = {
@@ -201,10 +215,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBD704E26F156E000D52BD1 /* ToDoListItems+CoreDataProperties.swift in Sources */,
+				044DBBFE26F1EA5B00490BFB /* DetailVCExtension.swift in Sources */,
 				CEBD704D26F156E000D52BD1 /* ToDoListItems+CoreDataClass.swift in Sources */,
 				CEBD702B26F141E700D52BD1 /* AppDelegate.swift in Sources */,
 				044DBBF426F165F500490BFB /* HomeViewController.swift in Sources */,
 				CEBD704326F1475400D52BD1 /* DetailViewController.swift in Sources */,
+				044DBBFC26F1EA4300490BFB /* HomeVCExtension.swift in Sources */,
 				CEBD703526F141E700D52BD1 /* CoreDataToDoApp.xcdatamodeld in Sources */,
 				04CEB87226F15BA700DF0EB3 /* HomeTableViewCell.swift in Sources */,
 				CEBD702D26F141E700D52BD1 /* SceneDelegate.swift in Sources */,
