@@ -10,6 +10,7 @@
 		044DBBF426F165F500490BFB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD702E26F141E700D52BD1 /* HomeViewController.swift */; };
 		044DBBFC26F1EA4300490BFB /* HomeVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBBFB26F1EA4300490BFB /* HomeVCExtension.swift */; };
 		044DBBFE26F1EA5B00490BFB /* DetailVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBBFD26F1EA5B00490BFB /* DetailVCExtension.swift */; };
+		044DBC0326F257CA00490BFB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DBC0226F257CA00490BFB /* HomeViewModel.swift */; };
 		04CEB87226F15BA700DF0EB3 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEB87126F15BA700DF0EB3 /* HomeTableViewCell.swift */; };
 		CEBD702B26F141E700D52BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD702A26F141E700D52BD1 /* AppDelegate.swift */; };
 		CEBD702D26F141E700D52BD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD702C26F141E700D52BD1 /* SceneDelegate.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		044DBBFB26F1EA4300490BFB /* HomeVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCExtension.swift; sourceTree = "<group>"; };
 		044DBBFD26F1EA5B00490BFB /* DetailVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVCExtension.swift; sourceTree = "<group>"; };
+		044DBC0226F257CA00490BFB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		04CEB87126F15BA700DF0EB3 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		CEBD702726F141E700D52BD1 /* CoreDataToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBD702A26F141E700D52BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		044DBC0126F257A000490BFB /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				044DBC0226F257CA00490BFB /* HomeViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		CEBD701E26F141E700D52BD1 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 		CEBD702926F141E700D52BD1 /* CoreDataToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				044DBC0126F257A000490BFB /* View Models */,
 				044DBBF526F1664D00490BFB /* Model */,
 				044DBBF626F1665F00490BFB /* Delegates */,
 				044DBBF726F1668F00490BFB /* ViewControllers */,
@@ -215,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBD704E26F156E000D52BD1 /* ToDoListItems+CoreDataProperties.swift in Sources */,
+				044DBC0326F257CA00490BFB /* HomeViewModel.swift in Sources */,
 				044DBBFE26F1EA5B00490BFB /* DetailVCExtension.swift in Sources */,
 				CEBD704D26F156E000D52BD1 /* ToDoListItems+CoreDataClass.swift in Sources */,
 				CEBD702B26F141E700D52BD1 /* AppDelegate.swift in Sources */,

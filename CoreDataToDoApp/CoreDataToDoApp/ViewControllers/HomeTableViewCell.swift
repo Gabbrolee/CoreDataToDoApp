@@ -46,6 +46,16 @@ class HomeTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func configure(with viewModel: HomeVCViewModel)   {
+        titleLabel.text = viewModel.title
+        descriptionLabel.text = viewModel.desc
+        if viewModel.importance == "important" {
+            importanceImage.image = UIImage(named: "importantImage")
+        } else {
+            importanceImage.image = nil
+        }
+    }
+    
     func setConstriant(){
         
         NSLayoutConstraint.activate([
