@@ -60,13 +60,7 @@ extension HomeViewController : detailViewControllerDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier, for: indexPath) as! HomeTableViewCell
-        cell.titleLabel.text = model.title
-        cell.descriptionLabel.text =  model.desc
-        if model.importance == "important" {
-            cell.importanceImage.image  = UIImage(named: "importantImage")
-        } else {
-            cell.importanceImage.image  = nil
-        }
+        cell.configure(with: HomeVCViewModel(with: model))
         return cell
     }
     
