@@ -46,7 +46,7 @@ class HomeTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(with viewModel: HomeVCViewModel)   {
+    func configure(with viewModel: HomeViewModel)   {
         titleLabel.text = viewModel.title
         descriptionLabel.text = viewModel.desc
         if viewModel.importance == "important" {
