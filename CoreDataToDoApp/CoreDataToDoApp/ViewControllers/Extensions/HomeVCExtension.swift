@@ -60,7 +60,7 @@ extension HomeViewController : detailViewControllerDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier, for: indexPath) as! HomeTableViewCell
-        cell.configure(with: HomeVCViewModel(with: model))
+        cell.configure(with: HomeViewModel(with: model))
         return cell
     }
     

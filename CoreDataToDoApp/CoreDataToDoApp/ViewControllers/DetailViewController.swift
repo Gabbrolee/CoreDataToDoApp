@@ -69,6 +69,19 @@ class DetailViewController: UIViewController {
         self.navigationItem.largeTitleDisplayMode = .never
         constraintViews()
         
+        if(selectedcell != nil){
+            
+            DispatchQueue.main.async {
+                self.titleTextView.text = self.selectedcell?.title
+                self.descriptionTextView.text = self.selectedcell?.desc
+                if self.selectedcell?.importance == "important" {
+                    self.importanceSwitch.isOn = true
+                }else {
+                    self.importanceSwitch.isOn = false
+                }
+            }
+        }
+        
     }
 }
 

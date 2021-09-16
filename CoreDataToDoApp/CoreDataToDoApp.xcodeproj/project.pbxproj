@@ -76,8 +76,8 @@
 			children = (
 				044DBBFA26F1EA1D00490BFB /* Extensions */,
 				CEBD702E26F141E700D52BD1 /* HomeViewController.swift */,
-				CEBD704226F1475400D52BD1 /* DetailViewController.swift */,
 				04CEB87126F15BA700DF0EB3 /* HomeTableViewCell.swift */,
+				CEBD704226F1475400D52BD1 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

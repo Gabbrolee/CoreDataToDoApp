@@ -8,7 +8,7 @@
 import UIKit.UIImage
 import CoreData
 
-struct HomeVCViewModel {
+struct HomeViewModel {
     
     let title: String?
     let desc: String?
